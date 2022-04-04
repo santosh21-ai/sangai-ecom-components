@@ -65,7 +65,7 @@ const SignIn = ({ setOpenSignIn, openSignIn, cancelButtonRef }) => {
                             id="email"
                             name="email"
                             type="email"
-                            autocomplete="email"
+                            // autocomplete="email"
                             required
                             className="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                           />

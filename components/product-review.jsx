@@ -119,8 +119,7 @@ export default function ProductReview() {
             Share your thoughts
           </h1>
           <p className="mt-1 text-medium text-gray-500 mt-2 font-medium">
-            If you&apos;ve used this product, share your thoughts with other
-            customers
+            If youve used this product share your thoughts with other customers
           </p>
           <button
             type="submit"

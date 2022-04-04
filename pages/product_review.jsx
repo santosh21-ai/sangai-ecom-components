@@ -118,10 +118,10 @@ export default function ProductReview() {
           <h1 className="text-lg font-bold leading-6 text-gray-600 mt-8">
             Share your thoughts
           </h1>
-          <p className="mt-1 text-medium text-gray-500 mt-2 font-medium">
+          {/* <p className="mt-1 text-medium text-gray-500 mt-2 font-medium">
             If you've used this product, share your thoughts with other
             customers
-          </p>
+          </p> */}
           <button
             type="submit"
             className="mt-6 mb-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"

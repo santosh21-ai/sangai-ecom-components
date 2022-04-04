@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import Carousel from "react-elastic-carousel";
-import Item from "./Item";
+// import Item from "./Item";
 
 const products = [
   {

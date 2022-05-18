@@ -55,7 +55,7 @@ const ClothesDetail = () => {
                 className="object-center object-cover"
               />
             </div>
-            <div className="sm:col-span-8 lg:col-span-7">
+            <div className="sm:col-span-8 lg:col-span-7 px-4">
               <h2 className="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">
                 {product.name}
               </h2>
@@ -262,15 +262,15 @@ const ClothesDetail = () => {
           </div>
         </div>
       </div>
-      <div className="divide-y divide-gray-300 gap-4 ">
-        <div className="w-full px-12">
-          <h1 className="text-2xl font-semibold mb-2 md:pl-24">
+      <div className="mt-4 divide-y divide-gray-300 gap-4 ">
+        <div className="w-full lg:px-12 px-4">
+          <h1 className="text-2xl font-extrabold text-gray-900 mb-2 md:pl-24">
             Related products
           </h1>
           <RelatedProducts />
         </div>
-        <div className="w-full px-12 ">
-          <h1 className="text-2xl font-semibold mb-2 md:pl-24 mt-8">
+        <div className="w-full w-full lg:px-12 px-4 ">
+          <h1 className="text-2xl font-extrabold text-gray-900 mb-2 md:pl-24 mt-8">
             Viwed products
           </h1>
           <ViwedProducts />

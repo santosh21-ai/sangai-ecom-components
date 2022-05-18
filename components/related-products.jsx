@@ -86,10 +86,10 @@ const breakPoints = [
 function RelatedProducts() {
   const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
   return (
-    <div className="carousel-wrapper">
-      <Carousel breakPoints={breakPoints}>
+    <div className="carousel-wrapper pb-8">
+      <Carousel breakPoints={breakPoints} pagination={false}>
         {products.map((product) => (
-          <div key={product.id} className="group relative border">
+          <div key={product.id} className="group relative border rounded">
             <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
               <img
                 src={product.imageSrc}
@@ -97,7 +97,7 @@ function RelatedProducts() {
                 className="w-full h-full object-center object-cover lg:w-full lg:h-full"
               />
             </div>
-            <div className="mt-4 flex justify-between">
+            <div className="mt-4 flex justify-between px-2">
               <div>
                 <h3 className="text-lg font-semibold text-gray-700">
                   <a href={product.href}>

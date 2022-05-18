@@ -35,7 +35,7 @@ export default function ProductReview() {
                   ></div>
                 </div>
               </div>
-              <div className="md:col-span-1 text-center">60%</div>
+              <div className="md:col-span-1 text-center">60%</div>ghfhf
             </div>
 
             <div className="md:grid md:grid-cols-8 md:gap-1">

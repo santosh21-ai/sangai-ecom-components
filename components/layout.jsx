@@ -1,4 +1,5 @@
 import { React, Fragment, useRef, useState } from "react";
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -13,6 +14,7 @@ import SignIn from "./sign-in";
 import CommadPalette from "./CommadPalette";
 import { projects } from "../utils/data";
 import { ShoppingCart } from "./ShoppingCart";
+import Footer from "./Footer";
 
 const navigation = {
   categories: [
@@ -327,7 +329,7 @@ export const Layout = ({ children }) => {
                   </div>
                 </div>
 
-                <div className="border-t border-gray-200 py-6 px-4">
+                {/* <div className="border-t border-gray-200 py-6 px-4">
                   <a href="#" className="-m-2 p-2 flex items-center">
                     <img
                       src="https://tailwindui.com/img/flags/flag-canada.svg"
@@ -339,7 +341,7 @@ export const Layout = ({ children }) => {
                     </span>
                     <span className="sr-only">, change currency</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </Transition.Child>
           </Dialog>
@@ -369,14 +371,16 @@ export const Layout = ({ children }) => {
 
                 {/* Logo */}
                 <div className="ml-4 flex lg:ml-0">
-                  <a href="#">
-                    <span className="sr-only">Workflow</span>
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                      alt=""
-                    />
-                  </a>
+                  <Link href="/">
+                    <a>
+                      <span className="sr-only">Workflow</span>
+                      <img
+                        className="h-8 w-auto"
+                        src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
+                        alt=""
+                      />
+                    </a>
+                  </Link>
                 </div>
 
                 {/* Flyout menus */}
@@ -506,11 +510,11 @@ export const Layout = ({ children }) => {
                 <div className="ml-auto flex items-center">
                   <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                     <a
-                      href="#"
+                      href="#!"
                       className="text-sm font-medium text-gray-700 hover:text-gray-800"
                       onClick={() => setOpenSignIn(true)}
                     >
-                      Sign in
+                      Sign inl
                     </a>
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                     <a
@@ -541,7 +545,7 @@ export const Layout = ({ children }) => {
                   {/* Search */}
                   <div className="flex lg:ml-6">
                     <a
-                      href="#"
+                      href="#!"
                       className="p-2 text-gray-400 hover:text-gray-500"
                       onClick={() => setSearchBar(true)}
                     >
@@ -551,9 +555,9 @@ export const Layout = ({ children }) => {
                   </div>
 
                   {/* Cart */}
-                  <div className="ml-4 flow-root lg:ml-6">
+                  <div className="ml-4 flow-root lg:ml-6 relative">
                     <a
-                      href="#"
+                      href="#!"
                       className="group -m-2 p-2 flex items-center"
                       onClick={() => setCartOpen(true)}
                     >
@@ -562,7 +566,7 @@ export const Layout = ({ children }) => {
                         aria-hidden="true"
                       />
                       <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                        0
+                        2
                       </span>
                       <span className="sr-only">items in cart, view bag</span>
                     </a>
@@ -579,6 +583,7 @@ export const Layout = ({ children }) => {
         cancelButtonRef={cancelButtonRef}
       />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };

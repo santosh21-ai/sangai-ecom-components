@@ -73,7 +73,7 @@ function classNames(...classes) {
 const Products = () => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
@@ -280,7 +280,12 @@ const Products = () => {
                 >
                   {subCategories.map((category) => (
                     <li key={category.name}>
-                      <a href={category.href}>SA{category.name}</a>
+                      <a
+                        href={category.href}
+                        className="hover:text-indigo-600 hover:text-sm"
+                      >
+                        {category.name}
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -353,18 +358,26 @@ const Products = () => {
                     <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                       {products.map((product) => (
                         <Link
+                          className=""
                           key={product.id}
                           href={`/${product.category}/${product.id}`}
                         >
                           <a className="group">
-                            <div className="w-full h-50 aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8 content-center">
+                            <div
+                              className="drop-shadow-xl w-full h-50 aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8 content-center
+                             "
+                            >
                               <Image
+                                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-500"
                                 src={product.imageSrc}
                                 alt="Picture of the author"
                                 width={500}
                                 height={600}
                               />
                             </div>
+                            {/* <button className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+                              Save Changes
+                            </button> */}
                             <div className="items-center">
                               <div className="flex">
                                 <h3 className="mt-4 text-base font-medium text-gray-700">

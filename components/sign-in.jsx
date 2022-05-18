@@ -40,8 +40,8 @@ const SignIn = ({ setOpenSignIn, openSignIn, cancelButtonRef }) => {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg ">
-              <div className="bg-gray-100 flex flex-col justify-center py-12 px-6 lg:px-8">
+            <div className="w-96 relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg ">
+              <div className=" flex flex-col justify-center py-12 px-6 lg:px-8 ">
                 <div className="sm:mx-auto sm:w-full sm:max-w-md">
                   <img
                     className="mx-auto h-12 w-auto"
@@ -51,7 +51,7 @@ const SignIn = ({ setOpenSignIn, openSignIn, cancelButtonRef }) => {
                 </div>
 
                 <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-                  <div className="bg-white px-6 shadow rounded-lg sm:px-10">
+                  <div className="rounded-lg sm:px-10">
                     <form className="mb-0 space-y-6" action="#" method="POST">
                       <div>
                         <label

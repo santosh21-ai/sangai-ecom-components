@@ -2,6 +2,7 @@ import { React, Fragment } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import { cartItem } from "../utils/data";
+import Link from "next/link";
 
 export const ShoppingCart = ({ openCart, setCartOpen }) => {
   return (
@@ -79,7 +80,7 @@ export const ShoppingCart = ({ openCart, setCartOpen }) => {
                                         {product.name}{" "}
                                       </a>
                                     </h3>
-                                    <p className="ml-4">{product.price}</p>
+                                    <p className="ml-4">₹{product.price}</p>
                                   </div>
                                   <p className="mt-1 text-sm text-gray-500">
                                     {product.color}
@@ -110,30 +111,34 @@ export const ShoppingCart = ({ openCart, setCartOpen }) => {
                   <div className="border-t border-gray-200 py-6 px-4 sm:px-6">
                     <div className="flex justify-between text-base font-medium text-gray-900">
                       <p>Subtotal</p>
-                      <p>$262.00</p>
+                      <p>₹570.00</p>
                     </div>
                     <p className="mt-0.5 text-sm text-gray-500">
                       Shipping and taxes calculated at checkout.
                     </p>
                     <div className="mt-6">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-                      >
-                        Checkout
-                      </a>
+                      <Link href="/CheckOut">
+                        <a
+                          onClick={() => setCartOpen(false)}
+                          className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                        >
+                          Checkout
+                        </a>
+                      </Link>
                     </div>
                     <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                       <p>
                         or{" "}
-                        <button
-                          type="button"
-                          className="font-medium text-indigo-600 hover:text-indigo-500"
-                          onClick={() => setCartOpen(false)}
-                        >
-                          Continue Shopping
-                          <span aria-hidden="true"> &rarr;</span>
-                        </button>
+                        <Link href="/products">
+                          <a
+                            type="button"
+                            className="font-medium text-indigo-600 hover:text-indigo-500"
+                            onClick={() => setCartOpen(false)}
+                          >
+                            Continue Shopping
+                            <span aria-hidden="true"> &rarr;</span>
+                          </a>
+                        </Link>
                       </p>
                     </div>
                   </div>

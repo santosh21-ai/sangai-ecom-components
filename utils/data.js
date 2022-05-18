@@ -136,7 +136,7 @@ export const cartItem = [
     name: "Throwback Hip Bag",
     href: "#",
     color: "Salmon",
-    price: "$90.00",
+    price: "330.00",
     quantity: 1,
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg",
@@ -148,7 +148,7 @@ export const cartItem = [
     name: "Medium Stuff Satchel",
     href: "#",
     color: "Blue",
-    price: "$32.00",
+    price: "240.00",
     quantity: 1,
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg",
@@ -184,5 +184,120 @@ export const callouts = [
       "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg",
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "#",
+  },
+];
+
+export const ordered_products = [
+  {
+    order_number: "WU8891111",
+    ordered_date: "July 6, 2021",
+    total_amount: "₹160.0",
+    products: [
+      {
+        id: 1,
+        name: "Throwback Hip Bag",
+        href: "#",
+        color: "Salmon",
+        price: "₹90.00",
+        quantity: 1,
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg",
+        imageAlt:
+          "Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.",
+      },
+      {
+        id: 2,
+        name: "Medium Stuff Satchel",
+        href: "#",
+        color: "Blue",
+        price: "₹32.00",
+        quantity: 1,
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg",
+        imageAlt:
+          "Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.",
+      },
+      {
+        id: 3,
+        name: "Medium Stuff Satchel",
+        href: "#",
+        color: "Blue",
+        price: "₹32.00",
+        quantity: 1,
+        imageSrc:
+          "https://i.pinimg.com/564x/90/2b/60/902b601353ad2717c851aa4c595522cf.jpg",
+        imageAlt:
+          "Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.",
+      },
+    ],
+  },
+  {
+    order_number: "WU8891112",
+    ordered_date: "July 10, 2021",
+    total_amount: "₹160.0",
+    products: [
+      {
+        id: 1,
+        name: "Throwback Hip Bag",
+        href: "#",
+        color: "Salmon",
+        price: "₹90.00",
+        quantity: 1,
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg",
+        imageAlt:
+          "Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.",
+      },
+      {
+        id: 2,
+        name: "Medium Stuff Satchel",
+        href: "#",
+        color: "Blue",
+        price: "₹32.00",
+        quantity: 1,
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg",
+        imageAlt:
+          "Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.",
+      },
+    ],
+  },
+];
+
+export const addresses = [
+  {
+    id: 1,
+    name: "Keisampat",
+    land_mark: "Create a new project from a variety of starting templates",
+  },
+  {
+    id: 2,
+    name: "Kwakeithel",
+    land_mark: "Create a new project from a variety of starting templates",
+  },
+  {
+    id: 3,
+    name: "Thangmeiband",
+    land_mark: "Create a new project from a variety of starting templates",
+  },
+  {
+    id: 4,
+    name: "Uripok",
+    land_mark: "Create a new project from a variety of starting templates",
+  },
+];
+
+export const delivery_type = [
+  {
+    id: 1,
+    type: "Standard",
+    description: "4-10 business day",
+    charge: "45",
+  },
+  {
+    id: 2,
+    type: "Express",
+    description: "2-5 business day",
+    charge: "80",
   },
 ];
